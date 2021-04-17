@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="screen">
+            <input  id = "screen-result"type="text" placeholder="0" class="input">
+        </div>
+        <div class="container">
+            <button class="but" value = "7" onclick="getData(this)">7</button>
+            <button class="but" value="8" onclick="getData(this)">8</button>
+            <button class="but" value="9" onclick="getData(this)">9</button>
+            <button class="delete" onclick="onlyclean()">DEL</button>
+            <button class="but" value="4" onclick="getData(this)">4</button>
+            <button class="but" value="5" onclick="getData(this)">5</button>
+            <button class="but" value="6" onclick="getData(this)">6</button>
+            <button class="all_delete" onclick="clean(this)">C</button>
+            <button class="but" value="1" onclick="getData(this)">1</button>
+            <button class="but" value="2" onclick="getData(this)">2</button>
+            <button class="but" value="3" onclick="getData(this)">3</button>
+            <button value="/" onclick="getData(this)" >÷</button>
+            <button class="but" value="000" onclick="getData(this)">000</button>
+            <button class="but"  value="00" onclick="getData(this)">00</button>
+            <button class="but" value="0" onclick="getData(this)">0</button>
+            <button value="," onclick="getData(this)">,</button>
+            <button value="*" onclick="getData(this)">×</button>
+            <button value="-" onclick="getData(this)">-</button>
+            <button value="+" onclick="getData(this)">+</button>
+            <button class="equals"  onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
